@@ -1,19 +1,25 @@
 import tkinter as tk
 from pytube import YouTube
 
-# add the ability to copy and paste into bar
-# make pretty gui
+# add instructions readme
+# make into desktop app (.desktop file, png image, command line stuff)
+# delete printf after
+# downloading... -> downnload complete or ERROR
+# check for user errors and make gui error friendly
+
 
 window = tk.Tk()
+window.geometry("500x250")
+window.title("YouTube Downloader")
+window.config()
 
-label = tk.Label(text="YouTube Downloader")
+
 link_label = tk.Label(text="Provide link to YouTube Video")
 user_link = tk.Entry()
-path_label = tk.Label(text="Provide path for video download")
+path_label = tk.Label(text="Provide path for video download, ex: /home/<username>/Downloads")
 user_path = tk.Entry()
 download_button = tk.Button(text="Download video")
 
-label.pack()
 link_label.pack()
 user_link.pack()
 path_label.pack()
@@ -21,8 +27,6 @@ user_path.pack()
 download_button.pack()
 
 def download_video(event):
-    print(user_link.get())
-    print(user_path.get())
     yt = YouTube(user_link.get())
     video = yt.streams.get_highest_resolution()
     video.download(user_path.get())
