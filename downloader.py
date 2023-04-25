@@ -1,13 +1,6 @@
 import tkinter as tk
 from pytube import YouTube
 
-# add instructions readme
-# make into desktop app (.desktop file, png image, command line stuff)
-# delete printf after
-# downloading... -> downnload complete or ERROR
-# check for user errors and make gui error friendly
-
-
 window = tk.Tk()
 window.geometry("500x250")
 window.title("YouTube Downloader")

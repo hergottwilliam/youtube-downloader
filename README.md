@@ -20,3 +20,7 @@ then
 gio set /home///<.desktop file> metadata:: trusted true
 
 6. If clicking on the icon does not work, right click on the icon and click "allow launching"
+
+# future updates
+- make GUI more pretty
+- add downloading progress bar
