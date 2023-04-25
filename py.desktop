@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version= 1.0
+Icon= /home/hergo/repos/youtube-downloader/playbutton.png
+Name= YouTube Downloader
+Exec= /usr/bin/env python3 /home/hergo/repos/youtube-downloader/downloader.py
+Terminal=False
+Type=Application
